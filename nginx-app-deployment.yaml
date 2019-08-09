@@ -23,6 +23,7 @@ spec:
       containers:
       - name: nginx-app
         image: phanikumary1995/nginx-eks-app:${BUILD_NUMBER}
+#        image: phanikumary1995/nginx-eks-app
         imagePullPolicy: Always
         ports:
         - name: http
