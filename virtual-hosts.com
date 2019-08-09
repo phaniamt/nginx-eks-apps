@@ -12,8 +12,8 @@ server {
         #resolver 10.100.0.10 ipv6=off;
         resolver kube-dns.kube-system.svc.cluster.local ipv6=off;
         set $target http://springboot.default.svc.cluster.local:8080;
-        proxy_read_timeout    90;
-        proxy_connect_timeout 90;
+     #   proxy_read_timeout    90;
+     #   proxy_connect_timeout 90;
         proxy_redirect        off;
         proxy_pass $target;
 
