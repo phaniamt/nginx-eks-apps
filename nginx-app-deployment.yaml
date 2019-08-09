@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: nginx-app
-  replicas: 1 # tells deployment to run 2 pods matching the template
+  replicas: 2 # tells deployment to run 2 pods matching the template
   template:
     metadata:
       labels:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: nginx-app
-          image: phanikumary1995/nginx-eks-app
+          image: phanikumary1995/nginx-eks-app:${BUILD_NUMBER}
           imagePullPolicy: Always
           ports:
             - name: http
