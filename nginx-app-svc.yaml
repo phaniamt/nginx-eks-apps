@@ -2,7 +2,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: nginx-app-svc
-  #namespace: ingress-nginx
+  namespace: dev
   labels:
     app: nginx-app
     #app.kubernetes.io/part-of: ingress-nginx
