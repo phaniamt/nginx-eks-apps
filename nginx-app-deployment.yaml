@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-app-deployment
+  namespace: dev
   labels:
     app: nginx-app
 spec:
@@ -22,7 +23,7 @@ spec:
     spec:
       containers:
       - name: nginx-app
-        image: phanikumary1995/nginx-eks-app:${BUILD_NUMBER}
+        image: phanikumary1995/nginx-eks-app
 #        image: phanikumary1995/nginx-eks-app
         imagePullPolicy: Always
         ports:
