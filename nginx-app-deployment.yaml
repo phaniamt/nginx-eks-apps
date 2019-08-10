@@ -20,10 +20,11 @@ spec:
     metadata:
       labels:
         app: nginx-app
+        version: ${BUILD_NUMBER}
     spec:
       containers:
       - name: nginx-app
-        image: phanikumary1995/nginx-eks-app
+        image: 294387193228.dkr.ecr.us-east-1.amazonaws.com/phani:nginx-app
 #        image: phanikumary1995/nginx-eks-app
         imagePullPolicy: Always
         ports:
