@@ -4,7 +4,7 @@
 server {
     listen            80;
     listen       [::]:80;
-    server_name  app.yphanikumar.xyz;
+    server_name  app.yphani.xyz;
 
     location / {
          # Get resolver ip from below command
